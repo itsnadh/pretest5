@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 import java.io.File;
 
 public class AutomatedTest {
-    public String phone = "629671919421";
+    public String phone = "629671989421";
     public String password = "password";
     public String latlong = "84567890";
     public String device_token = "12345";
