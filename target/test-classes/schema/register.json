@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "user_status": {
+                "type": "string"
+              },
+              "user_type": {
+                "type": "string"
+              },
+              "sugar_id": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "latlong": {
+                "type": "null"
+              },
+              "user_device": {
+                "type": "object",
+                "properties": {
+                  "device_token": {
+                    "type": "string"
+                  },
+                  "device_type": {
+                    "type": "string"
+                  },
+                  "device_status": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "device_token",
+                  "device_type",
+                  "device_status"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "phone",
+              "user_status",
+              "user_type",
+              "sugar_id",
+              "country",
+              "latlong",
+              "user_device"
+            ]
+          }
+        },
+        "required": [
+          "user"
+        ]
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }

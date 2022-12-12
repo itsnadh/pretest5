@@ -1,0 +1,30 @@
+{
+    "data": {
+        "user": {
+            "id": "SG52109",
+            "name": "kiia",
+            "level": 1,
+            "age": 24,
+            "birthday": "1998-10-12",
+            "gender": "female",
+            "zodiac": "Libra",
+            "hometown": "pati",
+            "bio": "life must go on",
+            "latlong": "84567890",
+            "education": {
+                "school_name": "banat",
+                "graduation_time": "2016-06-12"
+            },
+            "career": {
+                "company_name": "kiiakiiakiia.com",
+                "starting_from": "2018-11-09",
+                "ending_in": "2019-10-12"
+            },
+            "user_pictures": [],
+            "user_picture": null,
+            "cover_picture": {
+                "url": null
+            }
+        }
+    }
+}

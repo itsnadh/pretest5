@@ -1,0 +1,165 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "level": {
+                "type": "integer"
+              },
+              "age": {
+                "type": "integer"
+              },
+              "birthday": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "zodiac": {
+                "type": "string"
+              },
+              "hometown": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "latlong": {
+                "type": "string"
+              },
+              "education": {
+                "type": "object",
+                "properties": {
+                  "school_name": {
+                    "type": "string"
+                  },
+                  "graduation_time": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "school_name",
+                  "graduation_time"
+                ]
+              },
+              "career": {
+                "type": "object",
+                "properties": {
+                  "company_name": {
+                    "type": "string"
+                  },
+                  "starting_from": {
+                    "type": "string"
+                  },
+                  "ending_in": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "company_name",
+                  "starting_from",
+                  "ending_in"
+                ]
+              },
+              "user_pictures": {
+                "type": "array",
+                "items": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "picture": {
+                        "type": "object",
+                        "properties": {
+                          "url": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "url"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "picture"
+                    ]
+                  }
+                ]
+              },
+              "user_picture": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "picture": {
+                    "type": "object",
+                    "properties": {
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "url"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "picture"
+                ]
+              },
+              "cover_picture": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "level",
+              "age",
+              "birthday",
+              "gender",
+              "zodiac",
+              "hometown",
+              "bio",
+              "latlong",
+              "education",
+              "career",
+              "user_pictures",
+              "user_picture",
+              "cover_picture"
+            ]
+          }
+        },
+        "required": [
+          "user"
+        ]
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }

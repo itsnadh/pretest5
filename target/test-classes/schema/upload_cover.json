@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "object",
+        "properties": {
+          "user_picture": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "cover_picture": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "url"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "cover_picture"
+            ]
+          }
+        },
+        "required": [
+          "user_picture"
+        ]
+      }
+    },
+    "required": [
+      "data"
+    ]
+  }
